@@ -22,7 +22,6 @@ class CrearToDo extends Component {
             .getToDo()
             .then((listToDo) => {
                 this.setState({ listToDo: listToDo.data });
-                console.log('listado',listToDo)
             })
             .catch((err) =>
                 console.log("Este error pertenece a pagina ocio.js:", err)
